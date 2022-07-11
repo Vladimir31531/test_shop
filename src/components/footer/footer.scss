@@ -1,0 +1,15 @@
+@import "../../scss/globalStyles";
+
+
+footer {
+    text-align: center;
+    font-size: 20px*$vw;
+}
+
+
+@media screen and (max-width: 500px) {
+    footer {
+        text-align: center;
+        font-size: 15px*$TELvw;
+    }
+}

@@ -1,0 +1,24 @@
+.button {
+  padding: 0.26042vw;
+  border: 0.10417vw solid #666;
+  font-size: 0.83333vw;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #666;
+  color: #fff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    padding: 0.97222vw;
+    border: 0.38889vw solid #666;
+    font-size: 3.11111vw;
+  }
+}

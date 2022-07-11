@@ -1,0 +1,35 @@
+@import "../../scss/globalStyles";
+
+
+.productsList_w {
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+
+    h2 {
+        margin-bottom: 20px*$vw;
+    }
+}
+.productsList {
+    width: 100%;
+
+
+    @include flex(flex, row, wrap, flex-start, flex-start, unset);
+    gap: 24px*$vw;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .productsList_w {
+
+        h2 {
+            font-size: 20px*$TELvw;
+            margin: 0 auto;
+            margin-bottom: 20px*$TELvw;
+        }
+    }
+    .productsList {
+        padding-left: 10px*$TELvw;
+        gap: 10px*$TELvw;
+    }
+}

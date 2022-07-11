@@ -1,0 +1,128 @@
+.quantity {
+  width: 5.20833vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.quantity input {
+  width: 2.1875vw;
+  text-align: center;
+  border: none;
+  outline: none;
+  color: #222;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.04167vw;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.quantity button {
+  font-size: 1.5625vw;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0 0.26042vw;
+  cursor: pointer;
+}
+
+.quantity_alert {
+  padding: 0.52083vw;
+  background-color: #fff;
+  border-radius: 0.26042vw;
+  -webkit-box-shadow: 0.10417vw 0.10417vw 0.26042vw #00000080;
+          box-shadow: 0.10417vw 0.10417vw 0.26042vw #00000080;
+  white-space: nowrap;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+}
+
+.quantAlert_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .quantity {
+    width: 27.77778vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .quantity input {
+    width: 11.66667vw;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #222;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 5.55556vw;
+  }
+  .quantity input::-webkit-outer-spin-button,
+  .quantity input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+  }
+  .quantity button {
+    font-size: 8.33333vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 1.38889vw;
+    cursor: pointer;
+  }
+  .quantity_alert {
+    padding: 2.77778vw;
+    background-color: #fff;
+    border-radius: 1.38889vw;
+    -webkit-box-shadow: 0.55556vw 0.55556vw 1.38889vw #00000080;
+            box-shadow: 0.55556vw 0.55556vw 1.38889vw #00000080;
+    white-space: nowrap;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+  }
+  .quantAlert_opened {
+    visibility: visible;
+    opacity: 1;
+  }
+}

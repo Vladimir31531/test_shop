@@ -1,0 +1,12 @@
+@import "../../../scss/globalStyles";
+
+
+.MuiSlider-colorPrimary {
+    color: #666 !important;
+}
+
+@media screen and (max-width: 500px) {
+    .MuiSlider-colorPrimary {
+        color: #fff !important;
+    }
+}

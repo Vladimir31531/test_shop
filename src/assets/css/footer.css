@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+  font-size: 1.04167vw;
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    text-align: center;
+    font-size: 4.16667vw;
+  }
+}

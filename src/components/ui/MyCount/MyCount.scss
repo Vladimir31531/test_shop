@@ -1,0 +1,116 @@
+@import "../../../scss/globalStyles";
+
+
+.quantity {
+    width: 100px*$vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.quantity input {
+    width: 42px*$vw;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #222;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20px*$vw;
+}
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.quantity button {
+    font-size: 30px*$vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin: 0 5px*$vw;
+    cursor: pointer;
+}
+.quantity_alert {
+    padding: 10px*$vw;
+    background-color: #fff;
+    border-radius: 5px*$vw;
+    box-shadow: 2px*$vw 2px*$vw 5px*$vw #00000080;
+    white-space: nowrap;
+    transition: 0.3s;
+
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+}
+
+
+.quantAlert_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .quantity {
+        width: 100px*$TELvw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .quantity input {
+        width: 42px*$TELvw;
+        text-align: center;
+        border: none;
+        outline: none;
+        color: #222;
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 20px*$TELvw;
+    }
+    .quantity input::-webkit-outer-spin-button,
+    .quantity input::-webkit-inner-spin-button {
+        /* display: none; <- Crashes Chrome on hover */
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+    .quantity button {
+        font-size: 30px*$TELvw;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin: 0 5px*$TELvw;
+        cursor: pointer;
+    }
+    .quantity_alert {
+        padding: 10px*$TELvw;
+        background-color: #fff;
+        border-radius: 5px*$TELvw;
+        box-shadow: 2px*$TELvw 2px*$TELvw 5px*$TELvw #00000080;
+        white-space: nowrap;
+        transition: 0.3s;
+
+        visibility: hidden;
+        opacity: 0;
+
+        position: absolute;
+        top: 100%;
+    }
+
+
+    .quantAlert_opened {
+        visibility: visible;
+        opacity: 1;
+    }
+}

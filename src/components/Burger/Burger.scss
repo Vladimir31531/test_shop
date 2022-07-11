@@ -1,0 +1,26 @@
+@import "../../scss/globalStyles";
+@import '../../hamburger/hamburgers';
+
+
+
+.hamburger {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .hamburger {
+        display: inline-block;
+        z-index: 11;
+
+        /* .hamburger-inner {
+            background-color: #000;
+
+            &::before,
+            &::after {
+                background-color: #000;
+            }
+        } */
+    }
+}

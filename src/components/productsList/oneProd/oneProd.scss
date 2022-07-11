@@ -1,0 +1,61 @@
+@import "../../../scss/globalStyles";
+
+
+.oneProduct {
+    width: 300px*$vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px*$vw;
+    margin-bottom: 50px*$vw;
+    transition: 0.3s;
+}
+.oneProduct:hover {
+    box-shadow: 5px*$vw 5px*$vw 10px*$vw rgba(0, 0, 0, 0.5);
+}
+.oneProd_img {
+    width: 100%;
+    height: 300px*$vw;
+    margin-bottom: 30px*$vw;
+}
+.oneProd_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.oneProduct h3,
+.oneProduct p,
+.oneProduct .oneProd_price {
+    margin-bottom: 10px*$vw;
+    font-size: 20px*$vw;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .oneProduct {
+        width: 300px*$TELvw*0.55;
+        padding: 10px*$TELvw*0.55;
+        margin-bottom: 50px*$TELvw*0.55;
+    }
+    .oneProduct:hover {
+        box-shadow: 5px*$TELvw*0.55 5px*$TELvw*0.55 10px*$TELvw*0.55 rgba(0, 0, 0, 0.5);
+    }
+    .oneProd_img {
+        width: 100%;
+        height: 300px*$TELvw*0.55;
+        margin-bottom: 30px*$TELvw*0.55;
+    }
+    .oneProd_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .oneProduct h3,
+    .oneProduct p,
+    .oneProduct .oneProd_price {
+        margin-bottom: 10px*$TELvw*0.55;
+        font-size: 20px*$TELvw*0.55;
+    }
+}

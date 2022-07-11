@@ -1,0 +1,226 @@
+@import "../../scss/globalStyles";
+
+
+.main {
+
+    h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+.shopContent {
+    width: 100%;
+    margin-top: 50px*$vw;
+    
+    @include flex(flex, column, nowrap, flex-start, flex-start, unset);
+}
+
+.shopContent_search {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px*$vw;
+
+    input {
+        width: 60%;
+        height: 40px*$vw;
+        padding-left: 50px*$vw;
+        outline: none;
+    }
+    .searchIcon {
+        width: 20px*$vw;
+        height: 20px*$vw;
+        position: absolute;
+        left: 21%;
+        top: 26%;
+
+        @include flex(flex, row, nowrap, center, center, unset);
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.shopContent_filtersAndProds {
+    width: 100%;
+
+    @include flex(flex, row, nowrap, flex-start, flex-start, unset);
+}
+
+.oneFilter {
+    margin-bottom: 20px*$vw;
+
+    h3 {
+        margin-bottom: 15px*$vw;
+    }
+}
+
+.oneCategFilter {
+    margin-bottom: 10px*$vw;
+
+    input {
+        margin-right: 5px*$vw;
+    }
+}
+
+.shopContent_filters {
+    width: 300px*$vw;
+    position: sticky;
+    top: 150px*$vw;
+}
+
+.shopContent_Prods {
+    width: 100%;
+    margin-left: 50px*$vw;
+
+    @include flex(flex, row, wrap, flex-start, flex-start, unset);
+    gap: 47px*$vw;
+
+    h3 {
+        margin: 0 auto;
+    }
+}
+
+
+.openFilters,
+.nav_close {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.MuiBox-root {
+    width: 100% !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    .main {
+        margin-top: 80px*$TELvw;
+
+        h1 {
+            font-size: 30px*$TELvw;
+        }
+    }
+    .shopContent {
+        margin-top: 30px*$TELvw;
+    }
+
+    .shopContent_search {
+        margin-bottom: 50px*$TELvw;
+
+        input {
+            width: 90%;
+            height: 40px*$TELvw;
+            padding-left: 50px*$TELvw;
+        }
+        .searchIcon {
+            width: 20px*$TELvw;
+            height: 20px*$TELvw;
+            left: 9%;
+            top: 26%;
+        }
+    }
+
+    .oneFilter {
+        margin-bottom: 20px*$TELvw;
+
+        h3 {
+            font-size: 20px*$TELvw;
+            margin-bottom: 15px*$TELvw;
+        }
+    }
+
+    .oneCategFilter {
+        margin-bottom: 10px*$TELvw;
+        display: flex;
+        align-items: center;
+
+        input {
+            width: 15px*$TELvw;
+            height: 15px*$TELvw;
+            margin-right: 5px*$TELvw;
+        }
+    }
+
+    .shopContent_filters {
+        width: 85%;
+        height: 100vh;
+        padding: 80px*$TELvw 10px*$TELvw 80px*$TELvw 20px*$TELvw;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        left: -90%;
+        top: 0;
+
+        transition: 0.3s;
+
+        overflow-y: auto;
+    }
+    .oneFilter {
+        color: #fff;
+    }
+
+    .shopContent_Prods {
+        width: 100%;
+        margin-left: 50px*$vw;
+
+        @include flex(flex, row, wrap, flex-start, flex-start, unset);
+        gap: 47px*$vw;
+
+        h3 {
+            margin: 0 auto;
+        }
+    }
+
+    .shopContent_filtersAndProds {
+        position: relative;
+    }
+
+    .openFilters {
+        width: 25px*$TELvw;
+        height: 25px*$TELvw;
+        display: inline-block;
+        position: absolute;
+        top: -40px*$TELvw;
+        left: 5%;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .nav_close {
+        display: block;
+        color: #fff;
+        font-size: 25px*$TELvw;
+        position: absolute;
+        top: 55px*$TELvw;
+        right: 10px*$TELvw;
+    }
+
+
+
+
+
+
+    .show_nav {
+        left: 0;
+        top: 0;
+    }
+    .MuiBox-root {
+        width: 96% !important;
+    }
+}

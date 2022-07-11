@@ -1,0 +1,128 @@
+header {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1.5625vw 16.66667vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+}
+
+header .logo {
+  font-weight: 600;
+  font-size: 1.04167vw;
+}
+
+.nav {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 1.04167vw;
+  margin: 0 1.04167vw;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #222;
+  cursor: pointer;
+}
+
+.nav ul li:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 2.77778vw 5.55556vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .logo {
+    font-size: 4.16667vw;
+  }
+  .nav_ul {
+    width: 100%;
+    height: 110vh;
+    padding: 8.33333vw;
+    padding-top: 13.88889vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav ul li {
+    margin: 2.77778vw 0;
+  }
+  .nav ul li a {
+    font-size: 5.55556vw;
+    margin: 0 5.55556vw;
+    color: #fff;
+  }
+  .show_nav {
+    visibility: visible;
+    opacity: 1;
+  }
+}
